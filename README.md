@@ -1,4 +1,4 @@
-# deadmanssnitch
+# dms-report
 
 Simple library for reporting to [Dead Man's Snitch](https://deadmanssnitch.com).
 
@@ -7,7 +7,7 @@ Returns promises only. Standard callbacks are not supported. Though optionally y
 You can either report manually, or wrap an existing promise-returning function.
 
 ```js
-const dms = require('deadmanssnitch');
+const dms = require('dms-report');
 
 // indicates success
 await dms.report('76d84d19e4');
@@ -34,7 +34,7 @@ const result = await wrapped('some-input');
 ## Installation
 
 ```bash
-$ npm install deadmanssnitch
+$ npm install dms-report
 ```
 
 ## Support
