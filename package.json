@@ -1,0 +1,25 @@
+{
+  "name": "dms-report",
+  "version": "0.1.0",
+  "description": "Simple library for reporting to Dead Man's Snitch (deadmanssnitch.com)",
+  "homepage": "https://github.com/billinghamj/dms-report",
+  "bugs": "https://github.com/billinghamj/dms-report/issues",
+  "license": "MIT",
+  "author": "James Billingham <james@jamesbillingham.com> (http://jamesbillingham.com)",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billinghamj/dms-report.git"
+  },
+  "dependencies": {
+    "fetch-everywhere": "^1.0.5"
+  },
+  "keywords": [
+    "deadmanssnitch",
+    "dead",
+    "man's",
+    "man",
+    "mans",
+    "snitch"
+  ]
+}
