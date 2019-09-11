@@ -2,7 +2,7 @@
 
 Simple library for reporting to [Dead Man's Snitch](https://deadmanssnitch.com).
 
-Returns promises only. Standard callbacks are not supported. Though optionally you can just "fire and forget" and discard the returned promise - in this case, delivery isn't guaranteed, but is still likely.
+Returns promises only. Standard callbacks are not supported.
 
 You can either report manually, or wrap an existing promise-returning function.
 
@@ -21,7 +21,7 @@ await dms.report('76d84d19e4', { s: 1, m: 'foobar error occurred' });
 // wrap an existing promise-returning function and report the outcome
 // - promise resolved -> success with no message
 // - promise rejected -> failure with `error.message` as the message
-async foo(someId) {
+async function foo(someId) {
 	return await doSomething(someId);
 }
 

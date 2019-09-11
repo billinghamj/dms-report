@@ -1,6 +1,6 @@
 {
   "name": "dms-report",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple library for reporting to Dead Man's Snitch (deadmanssnitch.com)",
   "homepage": "https://github.com/billinghamj/dms-report",
   "bugs": "https://github.com/billinghamj/dms-report/issues",
