@@ -29,6 +29,9 @@ async function foo(someId) {
 const wrapped = dms.wrap('76d84d19e4', foo);
 
 const result = await wrapped('some-input');
+
+// wrap an existing promise-returning function with a blocking call to DMS and report the outcome
+const wrapped = dms.wrapBlocking('76d84d19e4', foo);
 ```
 
 ## Installation
