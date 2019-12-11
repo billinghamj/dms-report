@@ -6,6 +6,8 @@ Returns promises only. Standard callbacks are not supported. Though optionally y
 
 You can either report manually, or wrap an existing promise-returning function.
 
+If using `wrapBlocking`, please be aware that the result of the reporting process is not exposed. The process will block for a maximum of 5 seconds.
+
 ```js
 const dms = require('dms-report');
 
@@ -29,6 +31,9 @@ async foo(someId) {
 const wrapped = dms.wrap('76d84d19e4', foo);
 
 const result = await wrapped('some-input');
+
+// for environments which must block during the reporting process
+const wrapped = dms.wrapBlocking('76d84d19e4', foo);
 ```
 
 ## Installation
